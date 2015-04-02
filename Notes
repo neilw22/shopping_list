@@ -6,6 +6,8 @@ Functionality issues:
 - Add items past a certain point must expand the window size
 - Email button may be trickiest part, research this!!
 - Add reset button functionality
+- Get add button to respond on 'enter' - complete
+- Get add button to clear content window of id
 
 
 Style:
