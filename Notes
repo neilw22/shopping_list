@@ -1,0 +1,15 @@
+
+Notes for Shopping List App (April 1st 2015)
+
+Functionality issues:
+
+- Add items past a certain point must expand the window size
+- Email button may be trickiest part, research this!!
+- Add reset button functionality
+
+
+Style:
+
+- Fade or slide in items
+- add fonts and coloring
+- opacity on buttons or something similar
