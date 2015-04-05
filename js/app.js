@@ -2,7 +2,7 @@ $(document).ready(function() {
 
 	$('.add-items').click(function(event) {
 		event.preventDefault();
-		$( ".list-items" ).append( "<li>"+$('.itemstoadd').val()+"<input type='checkbox'</i>"+"</li>");
+		$( ".list-items" ).append( "<li>"+$('.itemstoadd').val()+"<input class='checkbox' type='checkbox'</i>"+"</li>");
 			$( '.itemstoadd').val('');
 
 	})
@@ -14,8 +14,9 @@ $(document).ready(function() {
 		};
 	})
 
-
-
-
+	$('.checkbox').click(function () {
+		$(this).find('li').addClass("crossed-off");
+			// $(this).addClass("crossed-off");
+	});
 
 });

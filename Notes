@@ -3,11 +3,11 @@ Notes for Shopping List App (April 1st 2015)
 
 Functionality issues:
 
-- Add items past a certain point must expand the window size
+- Add items past a certain point must expand the window size = Possibly redo CSS to make this work
 - Email button may be trickiest part, research this!!
 - Add reset button functionality
-- Get add button to respond on 'enter' - complete
-- Get add button to clear content window of id
+- Get add button to respond on 'enter' = complete
+- Get add button to clear input window = complete
 
 
 Style:
@@ -15,3 +15,32 @@ Style:
 - Fade or slide in items
 - add fonts and coloring
 - opacity on buttons or something similar
+- Email button got screwed up
+
+
+JSFIDDLE RESPONSE
+
+$(function () {
+    $("#input").keypress(function (e) {
+        if (e.which == 13) {
+            var content = $("#input").val();
+            var li  = $('<li />', {
+                    text : this.value
+                }),
+                inp = $('<input />', {
+                    'class': 'check',
+                    type   : 'checkbox',
+                    on : {
+                        change: function() {
+                            if (this.checked) {
+                                $(this).closest('li').wrapInner('<del />');
+                            }else{
+                                $(this).unwrap();
+                            }
+                        }
+                    }
+                });
+            $('.things').append( li.append(inp) );
+        };
+    });
+});
