@@ -51,6 +51,11 @@ $(document).ready(function() {
     });
 });
 
+$('.reset').click(function(event) {
+	$('.list-items').empty();
+});
+
+
 // $('.add-items').click(function(additem));
 
 	// $('.add-items').click(function(event) {
