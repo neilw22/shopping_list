@@ -55,6 +55,9 @@ $('.reset').click(function(event) {
 	$('.list-items').empty();
 });
 
+$('.email').click(function(event) {
+	alert("Coming Soon!")
+});
 
 // $('.add-items').click(function(additem));
 
