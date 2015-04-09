@@ -3,9 +3,9 @@ Notes for Shopping List App (April 1st 2015)
 
 Functionality issues:
 
-- Add items past a certain point must expand the window size = Possibly redo CSS to make this work
+- Add items past a certain point must expand the window size = Possibly redo CSS to make this work = completed
 - Email button may be trickiest part, research this!!
-- Add reset button functionality
+- Add reset button functionality = completed
 - Get add button to respond on 'enter' = complete
 - Get add button to clear input window = complete
 
