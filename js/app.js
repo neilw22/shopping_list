@@ -58,9 +58,32 @@ $('.reset').click(function(event) {
     $('#default').fadeIn( "slow" );
 });
 
-$('.email').click(function(event) {
-	alert("Coming Soon!")
-});
+// $('.email').click(function(event) {
+// 	alert("Coming Soon!")
+// });
+
+$('.email').click(function() {
+        
+        
+        
+            // var name = $('#name').val();
+            var email = $('#email').val();
+            var list = $('.list-items').text();
+            var varData = 'email=' + email + '&list=' + list;
+            console.log(varData);
+                
+            $.ajax({
+                type: "POST",
+                url:'php.php',
+                data: varData,
+                success: function() {
+                    alert("Email List Sent!");
+                }
+            
+            });
+        
+        });
+
 
 // $('.add-items').click(function(additem));
 
