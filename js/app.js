@@ -22,6 +22,7 @@ $(document).ready(function() {
                 });
             $('.list-items').append( li.append(inp) );
             $(".itemstoadd").val('');
+            $('#default').hide();
         };
     });
 });
@@ -48,11 +49,13 @@ $(document).ready(function() {
                 // console.log(content);
             $('.list-items').append( li.append(inp) );
             $(".itemstoadd").val('');
+            $('#default').hide();
     });
 });
 
 $('.reset').click(function(event) {
 	$('.list-items').empty();
+    $('#default').fadeIn( "slow" );
 });
 
 $('.email').click(function(event) {
